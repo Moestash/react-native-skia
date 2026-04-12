@@ -10,6 +10,7 @@ const IMAGE_FORMAT = {
   JPEG: 3, // ImageFormat.JPEG,
   PNG: 4, // ImageFormat.PNG,
   WEBP: 6, // ImageFormat.WEBP,
+  AVIF: 7, // ImageFormat.AVIF,
 };
 
 const IMAGE_INFO_BASE = {

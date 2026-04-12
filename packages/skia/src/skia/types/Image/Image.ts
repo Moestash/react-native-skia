@@ -30,6 +30,7 @@ export enum ImageFormat {
   JPEG = 3,
   PNG = 4,
   WEBP = 6,
+  AVIF = 7,
 }
 
 export type SamplingOptions = CubicResampler | FilterOptions;

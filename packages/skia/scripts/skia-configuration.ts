@@ -77,6 +77,7 @@ export const commonArgs = [
   ["skia_use_system_libjpeg_turbo", false],
   ["skia_use_system_libpng", false],
   ["skia_use_system_libwebp", false],
+  ["skia_use_libavif", true],
   ["skia_use_system_zlib", false],
   ["skia_enable_tools", false],
   ["is_official_build", !DEBUG],

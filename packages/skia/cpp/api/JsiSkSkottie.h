@@ -15,6 +15,8 @@
 #include "include/codec/SkJpegDecoder.h"
 #include "include/codec/SkPngDecoder.h"
 #include "include/codec/SkWebpDecoder.h"
+#include "include/codec/SkAvifDecoder.h"
+#include "include/codec"
 
 #include "modules/skottie/include/Skottie.h"
 #include "modules/skottie/include/SkottieProperty.h"
@@ -41,6 +43,10 @@ std::unique_ptr<SkCodec> DecodeImageData(sk_sp<SkData> data) {
 
   if (SkWebpDecoder::IsWebp(data->data(), data->size())) {
     return SkWebpDecoder::Decode(data, nullptr);
+  }
+
+  if (SkAvifDecoder::IsAvif(data->data(), data->size())) {
+    return SkAvifDecoder::Decode(data, nullptr);
   }
   return nullptr;
 }

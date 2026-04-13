@@ -24,7 +24,8 @@ export declare enum ImageFormat {
     JPEG = 3,
     PNG = 4,
     WEBP = 6,
-    AVIF = 7
+    AVIF = 12,
+    JXL = 13
 }
 export type SamplingOptions = CubicResampler | FilterOptions;
 export declare const isCubicSampling: (sampling: SamplingOptions) => sampling is CubicResampler;

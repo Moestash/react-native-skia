@@ -19,7 +19,8 @@ let ImageFormat = exports.ImageFormat = /*#__PURE__*/function (ImageFormat) {
   ImageFormat[ImageFormat["JPEG"] = 3] = "JPEG";
   ImageFormat[ImageFormat["PNG"] = 4] = "PNG";
   ImageFormat[ImageFormat["WEBP"] = 6] = "WEBP";
-  ImageFormat[ImageFormat["AVIF"] = 7] = "AVIF";
+  ImageFormat[ImageFormat["AVIF"] = 12] = "AVIF";
+  ImageFormat[ImageFormat["JXL"] = 13] = "JXL";
   return ImageFormat;
 }({});
 const isCubicSampling = sampling => {

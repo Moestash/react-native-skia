@@ -77,9 +77,6 @@ export const commonArgs = [
   ["skia_use_system_libjpeg_turbo", false],
   ["skia_use_system_libpng", false],
   ["skia_use_system_libwebp", false],
-  ["skia_use_system_libavif", false],
-  ["skia_use_libavif", true],
-  ["skia_use_dav1d", true],
   ["skia_use_system_zlib", false],
   ["skia_enable_tools", false],
   ["is_official_build", !DEBUG],
@@ -91,6 +88,8 @@ export const commonArgs = [
   //["skia_enable_ganesh", !GRAPHITE],
   ["skia_enable_graphite", GRAPHITE],
   ["skia_use_dawn", GRAPHITE],
+  ["skia_use_libavif", true],
+  ["skia_use_libjxl_decode", true],
   // C++20 is required for Graphite builds (Dawn uses C++20 concepts)
   // Passed via extra_cflags_cc per-target instead of skia_use_cpp20 (not available in all Skia versions)
 ];

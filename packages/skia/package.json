@@ -45,7 +45,7 @@
     "release": "semantic-release",
     "build": "bob build && merge-dirs lib/typescript/src lib/commonjs && merge-dirs lib/typescript/src lib/module",
     "clean-skia": "yarn rimraf ./libs && yarn rimraf ../../externals/skia/out",
-    "build-skia": "tsx ./scripts/build-skia.ts",
+    "build-skia": "ANDROID_NDK=$HOME/Library/Android/sdk/ndk/27.0.12077973 tsx ./scripts/build-skia.ts",
     "copy-skia-headers": "tsx ./scripts/copy-skia-headers.ts",
     "install-skia-graphite": "tsx ./scripts/install-skia-graphite.ts",
     "install-skia": "node scripts/install-libs.js",

@@ -49,12 +49,6 @@ local.properties
 # Legacy Eclipse Settings
 .settings/
 
-# Externals
-packages/skia/lib
-packages/skia/libs
-packages/skia/cpp/skia
-packages/skia/cpp/dawn
-
 # Remotion
 apps/remotion/stills
 
